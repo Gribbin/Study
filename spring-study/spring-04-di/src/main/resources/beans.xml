@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.gribbin.pojo.Address">
+        <property name="address" value="上海八佰伴"/>
+    </bean>
+
+    <bean id="student" class="com.gribbin.pojo.Student">
+        <!--第一种方式，普通注入，value-->
+        <property name="name" value="大秦帝国"/>
+        <!--第二种方式，bean注入，ref-->
+        <property name="address" ref="address"/>
+        <!--数组注入-->
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <!--List-->
+        <property name="hobbies">
+            <list>
+                <value>听歌</value>
+                <value>看电影</value>
+                <value>踢球</value>
+            </list>
+        </property>
+        <!--Map-->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="123123123123123"/>
+                <entry key="银行卡" value="1236458769687562131"/>
+            </map>
+        </property>
+        <!--Set-->
+        <property name="games">
+            <set>
+                <value>糖豆人</value>
+                <value>CBB</value>
+                <value>mrxnz</value>
+            </set>
+        </property>
+        <!--null-->
+        <property name="wife">
+            <null/>
+        </property>
+        <!--properties-->
+        <property name="info">
+            <props>
+                <prop key="lp">zc</prop>
+                <prop key="qr">bb</prop>
+                <prop key="en">rx</prop>
+            </props>
+        </property>
+
+    </bean>
+</beans>

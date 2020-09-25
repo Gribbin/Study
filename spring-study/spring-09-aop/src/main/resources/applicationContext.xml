@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="userService" class="com.gribbin.service.UserServiceImpl"/>
+    <bean id="log" class="com.gribbin.log.Log"/>
+    <bean id="diy" class="com.gribbin.diy.DiyPointCut"/>
+    <bean id="annotation" class="com.gribbin.diy.AnnotationPointCut"/>
+
+    <!--方式一：使用原生springAPI接口-->
+    <!--aop的配置-->
+    <!--<aop:config>
+        &lt;!&ndash;切入点 expression:表达式匹配要执行的方法&ndash;&gt;
+        <aop:pointcut id="pointcut" expression="execution(* com.gribbin.service.UserServiceImpl.*(..))"/>
+        &lt;!&ndash;执行环绕; advice-ref执行方法 . pointcut-ref切入点&ndash;&gt;
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        &lt;!&ndash;<aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>&ndash;&gt;
+    </aop:config>-->
+
+    <!--方式一：使用自定义类-->
+    <!--<aop:config>
+        <aop:aspect id="point" ref="diy">
+            <aop:pointcut id="pointcut" expression="execution(* com.gribbin.service.UserServiceImpl.*(..))"/>
+            <aop:before method="before" pointcut-ref="pointcut"/>
+            <aop:after method="after" pointcut-ref="pointcut"/>
+        </aop:aspect>
+    </aop:config>-->
+
+    <!--方式三：使用注解-->
+    <!--开启注解支持 动态代理实现方式：JDK(默认proxy-target-class="false")  cglib(proxy-target-class="true")-->
+    <aop:aspectj-autoproxy/>
+</beans>
