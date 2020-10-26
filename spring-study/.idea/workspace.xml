@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d730dc0-0cf5-4578-b9dd-b20408cb8f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MyTypeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/LinuxCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/MyImportSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/WindowsCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/ColorFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/RainBow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Yellow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-07-appconfig/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-07-appconfig/src/test/java/MyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,30 +129,10 @@
       <recent name="com.gribbin.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.test02">
+  <component name="RunManager" selected="JUnit.MyTest.test04">
     <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <module name="spring-09-aop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-11-transaction" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-10-mybatis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <module name="spring-07-appconfig" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,20 +157,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-07-appconfig" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="test03" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-07-appconfig" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="test04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.MyTest" />
-      <item itemvalue="JUnit.MyTest.test" />
-      <item itemvalue="JUnit.MyTest.test (1)" />
       <item itemvalue="JUnit.MyTest.test02" />
       <item itemvalue="JUnit.MyTest.test01" />
+      <item itemvalue="JUnit.MyTest.test03" />
+      <item itemvalue="Application.MyTest" />
+      <item itemvalue="JUnit.MyTest.test04" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.test04" />
+        <item itemvalue="Application.MyTest" />
+        <item itemvalue="JUnit.MyTest.test03" />
         <item itemvalue="JUnit.MyTest.test02" />
         <item itemvalue="JUnit.MyTest.test01" />
-        <item itemvalue="JUnit.MyTest.test (1)" />
-        <item itemvalue="JUnit.MyTest.test" />
-        <item itemvalue="Application.MyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +229,8 @@
       <workItem from="1599116039131" duration="507000" />
       <workItem from="1599116571981" duration="6551000" />
       <workItem from="1599180163152" duration="304000" />
-      <workItem from="1603446868346" duration="1996000" />
+      <workItem from="1603446868346" duration="2805000" />
+      <workItem from="1603673559120" duration="9899000" />
     </task>
     <servers />
   </component>
@@ -236,14 +242,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1598612178339" />
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599040583281">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603691849941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599040583281" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1599122623467">
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603691849941" />
+    <state x="686" y="121" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603691726134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599122623467" />
+    <state x="686" y="121" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1603691726134" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1603695270869">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603695270869" />
     <state x="388" y="328" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598859225962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -256,22 +266,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598339735324" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1603448783702">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1603703852591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603448783702" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1603448783702">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603703852591" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1603703852590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603448783702" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1603448783702">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603703852590" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1603703852590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603448783702" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1603448783702">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603703852590" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1603703852591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603448783702" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603703852591" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599015301764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -304,18 +314,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="620" y="100" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1597143788199" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1599180163645">
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1603673558894">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599180163645" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603673558894" />
     <state x="178" y="107" key="new project wizard" timestamp="1599115379812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599115379812" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603448503710">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603703736851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603448503710" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603703736851" />
     <state x="449" y="95" key="spring file set editor" timestamp="1599115576237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
