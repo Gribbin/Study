@@ -1,6 +1,5 @@
 import com.gribbin.config.MainConfig;
 import com.gribbin.config.SpringConfig;
-import com.gribbin.pojo.ColorFactoryBean;
 import com.gribbin.pojo.Person;
 import com.gribbin.pojo.User;
 import org.junit.Test;

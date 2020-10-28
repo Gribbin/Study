@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d730dc0-0cf5-4578-b9dd-b20408cb8f03" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/LinuxCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/MyImportSelector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/condition/WindowsCondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Blue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/ColorFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/RainBow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Red.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Yellow.java" afterDir="false" />
+    <list default="true" id="1d730dc0-0cf5-4578-b9dd-b20408cb8f03" name="Default Changelist" comment="Bean生命周期和BeanPostProcessor接口学习">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfigOfLifeCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/MyBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/resources/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-07-appconfig/src/test/java/IOCTest_LifeCycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/config/MainConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-07-appconfig/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-07-appconfig/src/test/java/MyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,10 +63,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Tag Library Descriptor" />
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -98,6 +99,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -129,7 +131,7 @@
       <recent name="com.gribbin.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.test04">
+  <component name="RunManager" selected="JUnit.IOCTest_LifeCycle.test01">
     <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <module name="spring-07-appconfig" />
@@ -137,21 +139,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IOCTest_LifeCycle.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-07-appconfig" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="MAIN_CLASS_NAME" value="IOCTest_LifeCycle" />
       <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-07-appconfig" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="test02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,20 +170,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.gribbin.pojo in spring-07-appconfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-07-appconfig" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gribbin.pojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gribbin.pojo" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.MyTest.test02" />
-      <item itemvalue="JUnit.MyTest.test01" />
-      <item itemvalue="JUnit.MyTest.test03" />
       <item itemvalue="Application.MyTest" />
+      <item itemvalue="JUnit.MyTest.test03" />
       <item itemvalue="JUnit.MyTest.test04" />
+      <item itemvalue="JUnit.IOCTest_LifeCycle.test01" />
+      <item itemvalue="JUnit.com.gribbin.pojo in spring-07-appconfig" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IOCTest_LifeCycle.test01" />
+        <item itemvalue="JUnit.com.gribbin.pojo in spring-07-appconfig" />
         <item itemvalue="JUnit.MyTest.test04" />
         <item itemvalue="Application.MyTest" />
         <item itemvalue="JUnit.MyTest.test03" />
-        <item itemvalue="JUnit.MyTest.test02" />
-        <item itemvalue="JUnit.MyTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -230,12 +236,21 @@
       <workItem from="1599116571981" duration="6551000" />
       <workItem from="1599180163152" duration="304000" />
       <workItem from="1603446868346" duration="2805000" />
-      <workItem from="1603673559120" duration="10147000" />
+      <workItem from="1603673559120" duration="11142000" />
+      <workItem from="1603760778228" duration="2313000" />
+      <workItem from="1603763543227" duration="40000" />
+      <workItem from="1603763635238" duration="1064000" />
+      <workItem from="1603765050973" duration="2814000" />
+      <workItem from="1603850746059" duration="10971000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bean生命周期和BeanPostProcessor接口学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bean生命周期和BeanPostProcessor接口学习" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Project_Structure" timestamp="1598612178339">
@@ -250,10 +265,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="686" y="121" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1603691726134" />
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1603695270869">
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1603764549579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603695270869" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603764549579" />
     <state x="388" y="328" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598859225962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -262,42 +277,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599032786143" />
+    <state x="320" y="2" key="CommitChangelistDialog2" timestamp="1603872272103">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="320" y="2" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603872272103" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598339735324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598339735324" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1603703852591">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1603872054259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603703852591" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1603703852590">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603872054259" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1603872054259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603703852590" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1603703852590">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603872054259" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1603872054259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603703852590" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1603703852591">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603872054259" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1603872054259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603703852591" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1599015301764">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603872054259" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1603868719175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599015301764" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1599015301764">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603868719175" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1603868719175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599015301764" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1599015301763">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603868719175" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1603868719175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599015301763" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1599015301764">
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603868719175" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1603868719175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599015301764" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603868719175" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1603446984002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -310,25 +329,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1599015104751" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1603864414023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1603864414023" />
     <state x="620" y="100" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1597143788199">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="620" y="100" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1597143788199" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1603673558894">
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1603850746443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603673558894" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603850746443" />
     <state x="178" y="107" key="new project wizard" timestamp="1599115379812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1599115379812" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603703736851">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603871539927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603703736851" />
-    <state x="449" y="95" key="spring file set editor" timestamp="1599115576237">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603871539927" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603871935582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1599115576237" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603871935582" />
+    <state x="449" y="95" key="spring file set editor" timestamp="1603872299161">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1603872299161" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/MyBeanPostProcessor.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-07-appconfig/src/main/java/com/gribbin/pojo/MyBeanPostProcessor.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_study$com_gribbin_pojo_in_spring_07_appconfig.ic" NAME="com.gribbin.pojo in spring-07-appconfig Coverage Results" MODIFIED="1603789060440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.gribbin.pojo.*</FILTER>
+    </SUITE>
   </component>
 </project>
