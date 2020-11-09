@@ -6,6 +6,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 public class WindowsCondition implements Condition {
+    @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         //判断是否Windows系统
         Environment environment = context.getEnvironment();

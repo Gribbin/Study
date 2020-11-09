@@ -1,4 +1,4 @@
-package com.gribbin.mapper;
+package com.gribbin.dao;
 
 import org.springframework.stereotype.Repository;
 

@@ -12,6 +12,7 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
      * @param registry:BeanDefinition注册类      把所有需要添加到容器中的bean，调用
      *                                        BeanDefinitionRegistry.registerBeanDefinition手工注册
      */
+    @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
         boolean b1 = registry.containsBeanDefinition("com.gribbin.pojo.Red");
         boolean b2 = registry.containsBeanDefinition("com.gribbin.pojo.Blue");

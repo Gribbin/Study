@@ -1,4 +1,4 @@
-import com.gribbin.mapper.UserMapper;
+import com.gribbin.dao.UserMapper;
 import com.gribbin.pojo.User;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

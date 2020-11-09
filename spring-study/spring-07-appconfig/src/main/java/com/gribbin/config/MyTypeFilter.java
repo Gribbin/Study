@@ -9,6 +9,7 @@ import org.springframework.core.type.filter.TypeFilter;
 import java.io.IOException;
 
 public class MyTypeFilter implements TypeFilter {
+    @Override
     public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory) throws IOException {
         ClassMetadata classMetadata = metadataReader.getClassMetadata();
         String className = classMetadata.getClassName();

@@ -13,6 +13,7 @@ public class LinuxCondition implements Condition {
      * @param metadata:注释信息
      * @return
      */
+    @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         //1、获取IOC使用的beanFactory
         ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();

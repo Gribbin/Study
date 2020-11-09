@@ -14,10 +14,10 @@
     <import resource="spring-dao.xml"/>
 
     <bean id="user" class="com.gribbin.pojo.User"/>
-    <bean id="userMapper" class="com.gribbin.mapper.UserMapperImpl">
+    <bean id="userMapper" class="com.gribbin.dao.UserMapperImpl">
         <property name="sessionTemplate" ref="sqlSession"/>
     </bean>
-    <bean id="userMapper2" class="com.gribbin.mapper.UserMapperImpl2">
+    <bean id="userMapper2" class="com.gribbin.dao.UserMapperImpl2">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 </beans>
