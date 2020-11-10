@@ -24,12 +24,23 @@ import org.springframework.context.annotation.Primary;
  *              没有能支持@Primary和@Autowired(required = false)
  *      Inject:需要导入javax.inject包，和@Autowired功能一样,没有(required = false)功能
  *
+ * 3、@Autowired:构造器、参数、方法、属性；
+ *      1)、标注在方法上:标注在setter方法上或者@Bean+方法参数，参数从容器汇总获取，默认不写@Autowired
+ *      2)、标注在有构造器上:如果组件只有一个有参构造器，这个有参构造器的@Autowired可以省略
+ *      3)、放在参数位置
+ *
+ * 4、自定义组件想要使用Spring容器底层的一些组件(ApplicationContext,BeanFactory,XXX)
+ *      自定义组件实现xxxAware接口:在创建对象的时候，会调用接口规定的方法注入相关组件；
+ *      把Spring底层的一些组件注入到自定义的Bean中；
+ *      xxxAware功能使用xxxProcessor实现；
+ *
  * AutowiredAnnotationBeanPostProcessor:解析完成自动装配功能；
+ *
  * @Author gribbin
  * @create 2020/11/9 17:23
  */
 @Configuration
-@ComponentScan({"com.gribbin.dao", "com.gribbin.service", "com.gribbin.controller"})
+@ComponentScan({"com.gribbin.dao", "com.gribbin.service", "com.gribbin.controller", "com.gribbin.pojo"})
 public class MainConfigOfAutowired {
     @Primary
     @Bean("bookDao2")
